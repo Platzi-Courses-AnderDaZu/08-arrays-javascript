@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Each</title>
+
+    <style>
+        body {
+            margin: 0 auto;
+            background: rgb(150, 202, 245);
+            color: rgb(77, 75, 78);
+            width: 250px;
+        }
+        .id {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* width: 250px; */
+        }
+        .id p {
+            border: 1px solid rgb(60, 94, 247);
+            padding: 5px 10px;
+            margin: 0;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Tasks</h2>
+    <div class="id"></div>
+
+    <script>
+        // const products = [
+        //     { title: 'Burger', price: 121 },
+        //     { title: 'Pizza', price: 20 }
+        // ];
+        // const app = document.querySelector('.id');
+        // products.forEach( e => {
+        //     app.innerHTML += `<li>${e.title} - $${e.price}</li>`
+        // });
+        const app2 = document.querySelector('.id');
+        const tasks = [
+            { title: 'Task 1', status: 'Completed', author: 'Juanp', time:  Date() },
+            { title: 'Task 2', status: 'Closed', author: 'Ander', time:  Date() },
+            { title: 'Task 3', status: 'Processs', author: 'Kar', time:  Date() },
+            { title: 'Task 4', status: 'Started', author: 'Lousie', time:  Date() },
+        ];
+        tasks.forEach( task => {
+            console.log(task);
+            let p = `<p>Task:${task.title}, Autor: ${task.author}, Status: ${task.status}</p>`;
+            app2.innerHTML += p;
+        });
+    </script>
+</body>
+</html>
