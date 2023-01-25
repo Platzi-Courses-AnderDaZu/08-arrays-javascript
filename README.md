@@ -26,7 +26,7 @@ puede que la memoria colapse.
 Por lo que, ¿cuál es mejor? La respuesta es ninguna, ya que cada uno permite manejar estructuras de datos,
 por ende es necesario identificar cuál forma es la adecuada a aplicar en un algoritmo.
 
-### Método Map
+## Método Map
 El método <map> consiste en crear un nuevo *array* a partir de los elementos originales transformados mediante
 una función *(callback)* y es **inmutable**.
 La transformación implica cambiar cualquier elemento en otro, ya sea un número, un objeto, otro *array*. Las
@@ -42,7 +42,7 @@ La función, que recibe como argumento el método <map>, utiliza **tres parámet
 - El **índice del elemento iterado**. Es decir, si es la primera iteración, será el índice 0, y así sucesivamente.
 - El ***array*** que está iterando.
 
-### Map Reloaded
+## Map Reloaded
 **Transformando objetos dentro de un *array***
 De un conjunto de datos, de los cuales son objetos, a veces requieres añadir una propiedad nueva o eliminar una 
 que no es necesaria. Si necesitas transformar objetos dentro de un *array*, debes tener en cuenta que **cada objeto** 
