@@ -50,3 +50,13 @@ que no es necesaria. Si necesitas transformar objetos dentro de un *array*, debe
 en el nuevo, aun cuando el método <map> es inmutable.
 Los parámetros por referencia los debes tener presente cuando manejes objetos y arrays.
 Una forma de evitar este comportamiento, es crear un nuevo objeto con el [spread operator](https://platzi.com/clases/1815-ecmascript-6/25942-que-se-implemento-en-es9/) *(operador de propagación)*.
+
+## Método Filter
+El método <filter> consiste en crear un nuevo *array* a partir de los elementos originales filtrados mediante 
+una función *(callback)* que indica la **condición a cumplir y es inmutable**. Si la condición se cumple, retorna 
+el elemento completo.
+
+Este proceso recibe **dos argumentos**:
+
+- La función que itera y evalúa si cada elemento del *array* si cumple con la condición especificada (obligatorio).
+- Un objeto al que puede hacer referencia el contexto <this> en la función. Si se lo omite, será <undefined>. Recuerde que <this> en arrow functions es el objeto global.
