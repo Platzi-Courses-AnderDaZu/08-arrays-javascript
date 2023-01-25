@@ -41,3 +41,12 @@ La función, que recibe como argumento el método <map>, utiliza **tres parámet
 - El **valor actual del elemento iterado**. Es decir, si es la primera iteración, será el primer elemento, y así sucesivamente.
 - El **índice del elemento iterado**. Es decir, si es la primera iteración, será el índice 0, y así sucesivamente.
 - El ***array*** que está iterando.
+
+### Map Reloaded
+**Transformando objetos dentro de un *array***
+De un conjunto de datos, de los cuales son objetos, a veces requieres añadir una propiedad nueva o eliminar una 
+que no es necesaria. Si necesitas transformar objetos dentro de un *array*, debes tener en cuenta que **cada objeto** 
+**tiene una referencia en memoria propia**. Por lo que si transformas un objeto, también lo harás en el original como 
+en el nuevo, aun cuando el método <map> es inmutable.
+Los parámetros por referencia los debes tener presente cuando manejes objetos y arrays.
+Una forma de evitar este comportamiento, es crear un nuevo objeto con el [spread operator](https://platzi.com/clases/1815-ecmascript-6/25942-que-se-implemento-en-es9/) *(operador de propagación)*.
