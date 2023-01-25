@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    <div class="id"></div>
+
+    <script>
+        const letters = [ 'a', 'b', 'c' ];
+        const app = document.querySelector('.id');
+        // const newArray = letters.map( e => e + '++' );
+        const newArray = letters.map( e => {
+            return `<li>${ e + '++' }</li>`
+        } );
+        // app.innerHTML = newArray;
+        app.innerHTML = newArray.join('');
+    </script>
+</body>
+</html>

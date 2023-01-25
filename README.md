@@ -25,3 +25,19 @@ exigente, te permite generar nuevoas estructuras para manejarlas sin cambiar la 
 puede que la memoria colapse.
 Por lo que, ¿cuál es mejor? La respuesta es ninguna, ya que cada uno permite manejar estructuras de datos,
 por ende es necesario identificar cuál forma es la adecuada a aplicar en un algoritmo.
+
+### Método Map
+El método <map> consiste en crear un nuevo *array* a partir de los elementos originales transformados mediante
+una función *(callback)* y es **inmutable**.
+La transformación implica cambiar cualquier elemento en otro, ya sea un número, un objeto, otro *array*. Las
+posibilidades son infinitas.
+Este método recibe dos **argumentos**:
+- La función que itera y transforma cada elemento del *array* (obligatorio).
+- Un objeto al que puede hacer referencia el contexto <this> en la función. si se lo omite, será <undefined>.
+
+> Recordar que <this> en *arrow functions* es un objeto global.
+
+La función, que recibe como argumento el método <map>, utiliza **tres parámetros**:
+- El **valor actual del elemento iterado**. Es decir, si es la primera iteración, será el primer elemento, y así sucesivamente.
+- El **índice del elemento iterado**. Es decir, si es la primera iteración, será el índice 0, y así sucesivamente.
+- El ***array*** que está iterando.
