@@ -96,3 +96,17 @@ Para obtener un objeto de frecuencias de cada elemento de un array es necesario 
 - Si no existe, creamos la propiedad referente al elemento del *array* y le inicializamos en 1.
 - Si ya existe solamente debemos aumentar en una unidad la propiedad de nuestro objeto referente al elemento del array.
 - Finalmente, debes retornar el objeto dentro de la función del método <reduce>.
+
+## Some
+El método <some> es inmutable y consiste en retornar un valor lógico verdadero **si existe al menos un elemento**
+**que cumpla la condición** establecida en la función *(callback)*.
+
+Este método recibe **dos argumentos**:
+
+- La función que itera y evalúa cada elemento del *array* hasta que al menos uno cumpla con la condición especificada (obligatorio).
+- Un objeto al que puede hacer referencia el contexto <this> en la función. Si se lo omite, será <undefined>. Recuerde que <this> en *arrow* functions es el objeto global.
+
+> En el ejemplo empleado para el presente método de *arrays*, se usa una librería para la manipulación de fechas,
+> dicha librería *(date-fns)* puede instalarse mediante línea de comandos:
+
+`$ npm i date-fns`
