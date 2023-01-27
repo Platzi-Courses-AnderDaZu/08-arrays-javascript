@@ -130,3 +130,15 @@ El **array que está iterando**.
 
 `array.every(function(element, index, array))`
 
+## Método Some
+Los métodos <find> y <findIndex> consisten en encontrar el **primer elemento de un array que cumpla con la condición especificada** en la función *(callback)*.
+
+En el caso de <find> retornará el elemento completo, si cumple con la condición, caso contrario retornará <undefined>. El método <findIndex> retornará el índice del elemento encontrado, caso contrario retornará `-1`.
+
+Estos procedimientos reciben **dos argumentos**:
+
+* La función que itera y evalúa cada elemento del *array* hasta encuentre uno que cumpla con la condición especificada (obligatorio).
+* Un objeto al que puede hacer referencia el contexto <this> en la función. Si se lo omite, será <undefined>. Recuerde que <this> en *arrow functions* es el objeto global.
+
+`array.find(function(), thisArg)`
+`array.findIndex(function(), thisArg)`
