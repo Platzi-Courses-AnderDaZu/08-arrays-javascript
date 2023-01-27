@@ -142,3 +142,13 @@ Estos procedimientos reciben **dos argumentos**:
 
 `array.find(function(), thisArg)`
 `array.findIndex(function(), thisArg)`
+
+## Método Includes
+El método <includes> determina si un *array* o *string* incluye un determinado elemento. Devuelve <true> o <false> , si existe o no respectivamente.
+
+Este método recibe dos argumentos:
+
+* El **elemento** a comparar.
+* El **índice inicial** desde donde comparar hasta el último elemento.
+
+> El método <includes> se utiliza para *arrays* y *strings*. El método es sensible a mayúsculas, minúsculas y espacios
