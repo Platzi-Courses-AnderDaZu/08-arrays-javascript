@@ -152,3 +152,40 @@ Este método recibe dos argumentos:
 * El **índice inicial** desde donde comparar hasta el último elemento.
 
 > El método <includes> se utiliza para *arrays* y *strings*. El método es sensible a mayúsculas, minúsculas y espacios
+
+## Método Join
+El método <join> une los elementos del *array*, mediante una separación, y retorna un *string*. Si un elemento es <undefined> o <null>, se convierte en una cadena vacía.
+
+Este procedimiento recibe un argumento:
+
+- La **separación** de cada elemento del *array* al unirlos.
+
+`array.join(separación)`
+
+## Método split de strings
+El método <split> de *strings*, es lo contrario que el método <join>, consiste en separar un *string* en *substrings*, indicando un valor a separar. Este método retornará un *array* de los elementos separados.
+
+Este método recibe dos argumentos:
+
+El **separador** que especifica el conjunto de caracteres a separar en *substrings*.
+El **límite** de elementos separados a retornar.
+
+```js
+    const cadena = "JavaScript es maravilloso, con JavaScript puedo crear el futuro de la web."
+
+    cadena.split(" ") 
+    /* [ 'JavaScript', 'es', 'maravilloso,', 'con', 'JavaScript', 'puedo', 'crear', 'el', 'futuro', 'de', 'la', 'web.' ]
+    */
+    cadena.split(", ") 
+    /* [ 
+        'JavaScript es maravilloso', 
+        'con JavaScript puedo crear el futuro de la web.' 
+    ]*/
+    cadena.split("JavaScript")
+    /* [
+        '', 
+        ' es maravilloso, con ', 
+        ' puedo crear el futuro de la web.' 
+    ]*/
+    cadena.split(" ", 3) // [ 'JavaScript', 'es', 'maravilloso,' ]
+```
