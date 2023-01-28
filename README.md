@@ -189,3 +189,12 @@ El **límite** de elementos separados a retornar.
     ]*/
     cadena.split(" ", 3) // [ 'JavaScript', 'es', 'maravilloso,' ]
 ```
+
+## Método Concat
+El método <concat> **es inmutable** y consiste en crear un nuevo *array* a partir de la unión de otros valores o *arrays* especificados como argumentos.
+
+Este método recibe **uno o varios argumentos**:
+
+Valores cualesquiera y/o *arrays* para concatenar.
+
+`let result = array.concat(otherArray)`
