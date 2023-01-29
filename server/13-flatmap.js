@@ -41,3 +41,16 @@ const calendars = {
 
 const resp3 = Object.values(calendars).flatMap( calendar => calendar.map( e => e.startDate ) );
 console.log( { resp3 } );
+
+// Reto
+let input = [
+    "Beautiful is better than ugly",
+    "Explicit is better than implicit",
+    "Simple is better than complex",
+    "Complex is better than complicated",
+  ];
+
+const newA = input.map( e => e.split(' ') ).flat();
+const newA2 = input.flatMap( e => e.split(' ') ).length;
+
+console.log( { newA, newA2 } );
