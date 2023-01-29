@@ -207,3 +207,28 @@ Este procedimiento recibe un argumento:
 * La **profundidad** del aplanamiento, por defecto, tiene un valor de 1. Si se desea aplanar todos los *sub-arrays* en una sola dimensión, utiliza el valor de <Infinity>.
 
 `array.flat(profundidad)`
+
+## Método Flatmap
+El método <flatMap> es **inmutable** y consiste en la combinación de los métodos <map> y <flat>. Primero realiza la iteración de los elementos del *array* (como si fuera <map>), y después los aplana en **una sola profundidad** (como si fuera <flat>).
+
+Este procedimiento recibe los mismos argumentos que el **método map**
+
+```js
+    const strings = ["Nunca pares", "de Aprender"]
+
+    strings.map(string => string.split(" ")) 
+    // [ [ 'Nunca', 'pares' ], [ 'de', 'Aprender' ] ]
+
+    strings.flatMap(string => string.split(" ")) 
+    // [ 'Nunca', 'pares', 'de', 'Aprender' ]
+```
+
+```js
+    const numbers = [1, 2, 3, 4]
+
+    numbers.map(number => [number * 2]) 
+    // [[2], [4], [6], [8]]
+
+    numbers.flatMap(number => [number *2]) 
+    // [2, 4, 6, 8]
+```
